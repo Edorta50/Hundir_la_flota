@@ -1,12 +1,19 @@
 import funciones as f
 
-# 1. Creamos todos los tableros del juego
-t_barcos_rival = f.crear_tableros()
-t_disparos_rival = f.crear_tableros()
-t_barcos_jugador = f.crear_tableros()
-t_disparos_jugador = f.crear_tableros()
+"""
+"Tenemos que crear los cuatro tableros necesarios para el juego,
+dos para el jugador (uno para colocar sus barcos y otro para registrar sus 
+disparos al rival) y otros dos equivalentes para el oponente."
+
+"""
+
+t_barcos_rival = f.crear_tableros() # Variable_1
+t_disparos_rival = f.crear_tableros() # Variable_2
+t_barcos_jugador = f.crear_tableros() # Variable_3
+t_disparos_jugador = f.crear_tableros() # Variable_4
 
 # 2. Colocamos toda la flota de forma AUTOMÁTICA y ALEATORIA en el tablero del jugador:
+
 # - 1 barco de eslora 4
 f.colocar_barco_aleatorio(t_barcos_jugador, 4)
 
